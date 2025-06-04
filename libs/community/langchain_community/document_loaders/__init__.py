@@ -529,6 +529,9 @@ if TYPE_CHECKING:
         GoogleApiYoutubeLoader,
         YoutubeLoader,
     )
+    from langchain_community.document_loaders.youtube_community import (
+        YoutubeCommunityLoader,
+    )
     from langchain_community.document_loaders.yuque import (
         YuqueLoader,
     )
@@ -731,6 +734,7 @@ _module_lookup = {
     "XorbitsLoader": "langchain_community.document_loaders.xorbits",
     "YoutubeAudioLoader": "langchain_community.document_loaders.blob_loaders",
     "YoutubeLoader": "langchain_community.document_loaders.youtube",
+    "YoutubeCommunityLoader": "langchain_community.document_loaders.youtube_community",
     "YuqueLoader": "langchain_community.document_loaders.yuque",
 }
 
@@ -939,5 +943,6 @@ __all__ = [
     "XorbitsLoader",
     "YoutubeAudioLoader",
     "YoutubeLoader",
+    "YoutubeCommunityLoader",
     "YuqueLoader",
 ]
